@@ -1,2 +1,2 @@
 require './webhook_logger'
-run Sinatra::Application
+run Pumatra

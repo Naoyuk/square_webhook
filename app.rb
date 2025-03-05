@@ -7,7 +7,7 @@ configure do
 end
 
 class Pumatra < Sinatra::Base
-  log_file = File.expand_path('webhook.log', __dir__)
+  log_file = File.expand_path('webhook.log', 'log')
   logger = Logger.new(log_file)
 
   get '/' do
