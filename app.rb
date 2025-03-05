@@ -14,7 +14,7 @@ class Pumatra < Sinatra::Base
     'Hello, World!'
   end
 
-  post '/squire/webhook' do
+  post '/square/webhook' do
     begin
       request_body = request.body.read
       logger.info("Received webhook at #{Time.now}")

@@ -1,2 +1,2 @@
-require './webhook_logger'
+require './app'
 run Pumatra
