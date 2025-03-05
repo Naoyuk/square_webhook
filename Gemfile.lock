@@ -8,6 +8,9 @@ GEM
     nio4r (2.7.4)
     puma (6.6.0)
       nio4r (~> 2.0)
+    puma-daemon (0.5.0)
+      puma (>= 5.0)
+      rack
     rack (3.1.11)
     rack-protection (4.1.1)
       base64 (>= 0.1.0)
@@ -34,6 +37,7 @@ PLATFORMS
 
 DEPENDENCIES
   puma
+  puma-daemon
   rackup
   sinatra
 

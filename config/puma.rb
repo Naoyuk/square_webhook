@@ -1,3 +1,5 @@
+require 'puma/daemon'
+
 root = "#{Dir.getwd}"
 
 bind "tcp://0.0.0.0:7890"
@@ -6,3 +8,5 @@ state_path "#{root}/tmp/puma/state"
 rackup "#{root}/config.ru"
 threads 4, 8
 activate_control_app
+
+daemonize
