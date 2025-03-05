@@ -5,6 +5,10 @@ require 'logger'
 log_file = File.expnad_path('webhook.log', __dir__)
 logger = Logger.new(log_file)
 
+get '/' do
+  'Hello, World!'
+end
+
 post '/squire/webhook' do
   begin
     request_body = request.body.read
